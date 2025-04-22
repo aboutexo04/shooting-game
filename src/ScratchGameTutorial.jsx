@@ -2,28 +2,24 @@ import { useState } from "react";
 
 const steps = [
   {
-    title: "Introduction to Smart-Light Tutorial",
-    description: "In this tutorial, we'll create a smart light in Scratch that turns on automatically when a character approaches it, and a character that responds to keyboard controls.",
+    title: "Introduction to Shooting game",
+    description: "In this tutorial, we'll create a simple shooting game in Scratch where players control a spaceship, shoot projectiles, and hit targets to earn points. The game ends if the player collides with an enemy.",
     images: ["images/first.png"]
   },
   {
-    title: "Step 1: Setting Up the Light Sprite",
-    description: "First, add code to your light sprite to make it partially transparent using the ghost effect. This will be our starting point for the smart light.",
-    images: ["images/light.png"]
+    title: "Step 1: Setting Up the Player Spaceship",
+    description: "First, we'll create the spaceship sprite and program its movement controls. The player will be able to move up and down using arrow keys. We'll position the ship on the left side of the screen and set its appropriate size. We'll add the game over condition.",
+    images: ["images/rocket.png"]
   },
   {
-    title: "Step 2: Programming the Light's Behavior",
-    description: "Add proximity detection using a forever loop and distance sensing. This code makes the light show when the cat is nearby and hide when it moves away.",
-    images: ["images/light.png"]
+    title: "Step 2: Creating the Shooting Mechanism",
+    description: "Next, we'll program the shooting mechanics. When the player presses the space key, the game will create a clone of the ship, play a sound effect, and the clone will move across the screen as a projectile. The projectile will be deleted if it hits the edge of the screen or an enemy.",
+    images: ["images/lightning.png"]
   },
   {
-    title: "Step 3: Setting Up Character Movement",
-    description: "Program the cat sprite to respond to left and right arrow keys, allowing it to move around and trigger the smart light when it gets close enough.",
-    images: ["images/cat.png"]
-  },
-  {
-    title: "Step 4: Testing and Modifications",
-    description: "Run your project by clicking the green flag and test if the light turns on when the cat approaches. Experiment with different distances and effects to customize your smart light system.",
+    title: "Step 3: Adding Enemies and Scoring",
+    description: "Now we'll add enemy sprites that appear randomly on the right side of the screen and move toward the player. When an enemy is hit by a projectile, the player earns a point and the enemy is removed. If an enemy reaches the edge of the screen, it is also removed.",
+    images: ["images/planet.png"]
   }
 ];
 
